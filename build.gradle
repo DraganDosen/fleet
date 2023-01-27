@@ -1,0 +1,76 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+
+    repositories {
+        google()
+        jcenter()
+        maven { url "https://jitpack.io" }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.1.4'
+        classpath 'com.google.gms:google-services:4.0.1'
+
+    }
+
+
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url "https://jitpack.io" }
+    }
+
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    supportLibVersion = "27.1.1"
+    constraintLayoutVersion = "1.1.2"
+    pagingVersion = "1.0.1"
+    pagingRxVersion = "1.0.1"
+
+    firebaseMessaging = "11.8.0"
+
+    fbCore = "16.0.1"
+    fbMsg = "17.3.0"
+
+    daggerVersion = "2.15"
+    timberVersion = "4.7.0"
+
+    butterKnifeVersion = "8.8.1"
+    glideVersion = "4.7.1"
+
+    okhttpVersion = "3.10.0"
+    retrofitVersion = "2.4.0"
+
+    rxJava = "2.1.7"
+    rxAndroid = "2.0.2"
+    rxPermissionVersion = "0.9.5@aar"
+
+    navigationVersion = "2.4.0"
+    cropingVersion = "2.7.0"
+
+    fbSdkVersion = "4.34.0"
+    mapsVersion = "15.0.1"
+
+    rangeSeekVersion = "1.3"
+    tdPickerVersion = "2.0"
+    rxLocationVersion = "2.1@aar"
+
+    mapsVersion = "15.0.1"
+
+    fbCore = "16.0.1"
+    fbMsg = "17.3.0"
+
+    apacheCommonsVersion = "3.5"
+
+    ccpVersion = "2.2.2"
+
+    stompProtocolVersion = "1.5.4"
+}
